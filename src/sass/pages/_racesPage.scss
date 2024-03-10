@@ -1,0 +1,85 @@
+@use "../abstracts/" as *;
+
+.races {
+  &__listing {
+    height: rem(1100px);
+    display: flex;
+    align-items: center;
+    margin-top: rem(30px);
+
+    @include media(1300px) {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  &__race {
+    margin: rem(50px);
+    flex: 1;
+
+    @include media(1300px) {
+      margin: 0 rem(20px);
+      padding-top: rem(50px);
+      width: 100%;
+    }
+  }
+
+  &__map {
+    margin-top: rem(80px);
+    height: rem(300px);
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--color-text-faint);
+
+    .leaflet-container {
+      height: 100%;
+      width: 100%;
+      z-index: 99;
+    }
+
+    @include media(1300px) {
+      margin: rem(80px) rem(40px) rem(40px) rem(40px);
+    }
+  }
+
+  &__tables {
+    margin: rem(60px) auto 0 auto;
+    padding: 0 rem(50px);
+    max-width: rem(1100px);
+
+    @include media(600px) {
+      padding: 0;
+    }
+  }
+
+  &__table {
+    margin-top: rem(30px);
+    overflow-x: scroll;
+
+    @include media(1300px) {
+      .table {
+        overflow-x: scroll;
+        min-width: rem(900px);
+
+        &::-webkit-scrollbar {
+          height: rem(0px);
+        }
+      }
+    }
+  }
+
+  &__na {
+    background-color: var(--color-table-alt-1);
+    padding: rem(50px);
+    border-radius: 10px;
+  }
+
+  &__loading {
+    height: rem(1300px);
+
+    .loader {
+      margin-top: rem(50px);
+      place-content: start center;
+    }
+  }
+}

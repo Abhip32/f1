@@ -1,0 +1,71 @@
+@use "./functions/" as *;
+
+@mixin style-text($color) {
+  font-size: 20px;
+  color: $color;
+}
+
+@mixin style-link($color) {
+  position: relative;
+  text-decoration: none;
+  color: $color;
+  transition: all 0.4s;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: currentColor;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: all 0.4s;
+  }
+
+  &:hover:not(&--active) {
+    &::after {
+      width: 30%;
+    }
+  }
+
+  &--active {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+@mixin gridLines($background, $line, $line-opacity) {
+  background-color: $background;
+  background-image: linear-gradient(
+      rgba($line, $line-opacity) 1.6px,
+      transparent 1.6px
+    ),
+    linear-gradient(
+      to right,
+      rgba($line, $line-opacity) 1.6px,
+      $background 1.6px
+    );
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+@mixin radiaGridLines($background, $line, $background-fade-out, $line-opacity) {
+  background-color: $background;
+  // background-color: var(--color-background);
+  background-image: radial-gradient(#ffffff00, $background $background-fade-out),
+    linear-gradient(rgba($line, $line-opacity) 1.6px, transparent 1.6px),
+    linear-gradient(
+      to right,
+      rgba($line, $line-opacity) 1.6px,
+      $background 1.6px
+    );
+  background-position: center;
+  background-size: 100%, 32px 32px, 32px 32px;
+}
+
+@mixin media($width) {
+  @media (max-width: em($width)) {
+    @content;
+  }
+}

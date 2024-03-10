@@ -1,0 +1,97 @@
+@use "../abstracts/" as *;
+
+.driver {
+  &__container {
+    margin: rem(30px) rem(160px);
+    display: flex;
+    gap: rem(30px);
+
+    @include media(1200px) {
+      margin: rem(30px);
+    }
+
+    @include media(850px) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50%;
+    }
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: rem(15px);
+
+    border-bottom: var(--border-divider-faint);
+  }
+
+  &__team {
+    display: flex;
+    align-items: center;
+    gap: rem(10px);
+
+    h3 {
+      font-family: var(--font-grotesk);
+      font-size: rem(25px);
+      font-weight: 600;
+    }
+
+    img {
+      width: rem(35px);
+    }
+  }
+
+  &__flag {
+    width: rem(50px);
+  }
+}
+
+.champion {
+  display: flex;
+  align-items: center;
+  gap: rem(20px);
+  margin: 0 rem(140px);
+  text-align: left;
+
+  p {
+    font-weight: 500;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(10px);
+  }
+
+  &__year {
+    padding: 3px 15px;
+    background-color: var(--color-highlight);
+    font-family: var(--font-bakbak);
+    font-weight: 800;
+  }
+
+  @include media(1200px) {
+    margin: 0 rem(30px);
+  }
+
+  @include media(850px) {
+    padding-left: rem(10px);
+  }
+}

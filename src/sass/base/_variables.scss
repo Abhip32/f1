@@ -1,0 +1,28 @@
+@import url(https://db.onlinewebfonts.com/c/5fa59df7bc502c63582850f9f34b9db2?family=Formula1+Display-Bold+Bold);
+html {
+  --color-test: aqua;
+
+  --color-background: #090a0a;
+  --color-section-background: #0f0f0f;
+  --color-event-background: #181817;
+  --color-card-background: #0c141b;
+  --color-aside-background: #1a1a1a;
+
+  --color-table-alt-1: #222222;
+  --color-table-alt-2: #151616;
+
+  --color-bubble: #525d65;
+
+  --color-text: #fff;
+  --color-text-faint: #8f8f8f;
+  --color-divider: #585858;
+  --color-divider-opaque: rgba(88, 88, 88, 0.5);
+  --color-highlight: #cb0303;
+
+  --font-poppins: "Formula1 Display-Bold Bold";
+  --font-grotesk: "Formula1 Display-Bold Bold";
+  --font-bakbak: "Formula1 Display-Bold Bold";
+
+  --border-divider: 1px solid var(--color-text-faint);
+  --border-divider-faint: 1px solid var(--color-divider-opaque);
+}

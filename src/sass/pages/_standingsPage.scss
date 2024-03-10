@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.standings {
+  &__table {
+    margin: rem(30px) auto;
+    padding: 0 rem(50px);
+    max-width: rem(1100px);
+
+    @include media(900px) {
+      padding: 0 rem(30px);
+    }
+
+    @include media(600px) {
+      padding: 0;
+    }
+  }
+}
