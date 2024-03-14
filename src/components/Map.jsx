@@ -22,8 +22,9 @@ const Map = ({ coords }) => {
     <MapContainer center={coords} zoom={13}>
       {coords && <SetViewOnClick coords={coords} />}
       <TileLayer
-        url={`https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=${process.env.TILE_KEY}`}
-      />
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
       <Marker icon={icon} position={coords}></Marker>
     </MapContainer>
   );
