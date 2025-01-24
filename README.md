@@ -1,9 +1,100 @@
-<h1>F1 Website made with React Js & ergas API</h1>
-![App Screenshot](https://github.com/Abhip32/f1/assets/91268212/eb0517ca-8a92-4f64-a804-5e94a63bbf41)
-![screencapture-f1-khaki-mu-vercel-app-races-7-2024-05-12-18_38_44](https://github.com/Abhip32/f1/assets/91268212/66f6a9aa-d8f0-494e-892e-967390f6b963)
-![screencapture-f1-khaki-mu-vercel-app-standings-2024-05-12-18_39_22](https://github.com/Abhip32/f1/assets/91268212/db4590c8-8d85-42e5-a79c-e6993fab87a1)
-![screencapture-f1-khaki-mu-vercel-app-standings-2024-05-12-18_39_28](https://github.com/Abhip32/f1/assets/91268212/05289fee-df03-40fa-b068-4ae424c29deb)
-![screencapture-f1-khaki-mu-vercel-app-drivers-2024-05-12-18_39_41](https://github.com/Abhip32/f1/assets/91268212/093e723e-bc25-4e84-82b7-6ec3d8dc7609)
-![screencapture-f1-khaki-mu-vercel-app-drivers-Max-Verstappen-2024-05-12-18_39_52](https://github.com/Abhip32/f1/assets/91268212/88f7ee5c-2f85-482c-92cb-643aa722427f)
-![screencapture-f1-khaki-mu-vercel-app-constructors-2024-05-12-18_40_05](https://github.com/Abhip32/f1/assets/91268212/bc0740f5-8613-43a2-9844-3992c199227a)
-![screencapture-f1-khaki-mu-vercel-app-constructors-Scuderia-Ferrari-2024-05-12-18_40_17](https://github.com/Abhip32/f1/assets/91268212/becb97df-f97a-4783-831d-f93e488e2384)
+# F1 Fan Website
+
+Welcome to the F1 Fan Website! This project is a dedicated platform for Formula 1 enthusiasts to explore detailed information about races, drivers, constructors, and standings. The website provides an intuitive interface to dive deep into the world of F1, with live updates, historical data, and more.
+
+## Features
+
+- **Drivers**: Explore detailed profiles of F1 drivers, including stats, achievements, and their journey in the world of F1.
+- **Constructors**: Learn about the legendary F1 teams and their contributions to the sport.
+- **Races**: Get schedules and results of F1 races, including detailed information about each event.
+- **Standings**: Stay updated with the latest standings for drivers and constructors.
+- **Dynamic Design**: Built with a responsive and modern interface for the best user experience.
+
+## Screenshots
+
+Here are some snapshots of the website:
+
+### Homepage
+![Homepage](screenshots/screencapture-f1-khaki-mu-vercel-app-2024-05-12-18_38_32.png)
+
+### Constructors Page
+![Constructors](screenshots/screencapture-f1-khaki-mu-vercel-app-constructors-2024-05-12-18_40_05.png)
+
+### Scuderia Ferrari Profile
+![Scuderia Ferrari](screenshots/screencapture-f1-khaki-mu-vercel-app-constructors-Scuderia-Ferrari-2024-05-12-18_40_17.png)
+
+### Drivers Page
+![Drivers](screenshots/screencapture-f1-khaki-mu-vercel-app-drivers-2024-05-12-18_39_41.png)
+
+### Max Verstappen Profile
+![Max Verstappen](screenshots/screencapture-f1-khaki-mu-vercel-app-drivers-Max-Verstappen-2024-05-12-18_39_52.png)
+
+### Race Page - Event 6
+![Race 6](screenshots/screencapture-f1-khaki-mu-vercel-app-races-6-2024-05-12-18_38_53.png)
+
+### Race Page - Event 7
+![Race 7](screenshots/screencapture-f1-khaki-mu-vercel-app-races-7-2024-05-12-18_38_44.png)
+
+### Standings Overview
+![Standings Overview](screenshots/screencapture-f1-khaki-mu-vercel-app-standings-2024-05-12-18_39_22.png)
+
+### Detailed Standings
+![Detailed Standings](screenshots/screencapture-f1-khaki-mu-vercel-app-standings-2024-05-12-18_39_28.png)
+
+## Technologies Used
+
+- **Frontend**: React.js
+- **Backend**: Node.js
+- **Database**: MongoDB
+- **Hosting**: Vercel
+
+## How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Abhip32/f1.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd f1
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Open your browser and visit:
+   ```
+   http://localhost:3000
+   ```
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add some feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
+
+
+---
+
+### Thank you for exploring the F1 Fan Website! 🏎️
+Feel free to raise an issue or contribute to enhance the project further.
+```
+
+Let me know if you'd like to add or tweak anything!
